@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    margin: 0;
+    color: white;
+}
+
+body{
+    background-color: #18191a;
+}
+
+header{
+    background-color: #242526;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#apps-section{
+    width: 70%;
+    background-color: #ffffff1e;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.apps{
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+a{
+    text-decoration: none;
+}
