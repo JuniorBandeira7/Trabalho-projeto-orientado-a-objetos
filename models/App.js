@@ -12,14 +12,20 @@ class App {
         this.about = about
     }
 
-    // Recuperar todos os usuários do arquivo JSON
     static getAll() {
         if (!fs.existsSync(filePath)) {
             return []
         }
-
-        const data = fs.readFileSync(filePath)
-        return JSON.parse(data)
+    
+        const data = fs.readFileSync(filePath);
+        const parsedData = JSON.parse(data);
+    
+        
+        if (!Array.isArray(parsedData)) {
+            return Object.values(parsedData)
+        }
+    
+        return parsedData
     }
     
 

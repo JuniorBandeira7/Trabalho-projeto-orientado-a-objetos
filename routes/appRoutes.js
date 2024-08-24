@@ -5,7 +5,7 @@ const port = 3000
 
 const appController = require('../controllers/appController')
 
-router.get('/', appController.app)
+router.get('/:name', appController.app)
 
 
 module.exports = router

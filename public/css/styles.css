@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    margin: 0;
     color: white;
 }
 
@@ -20,6 +19,8 @@ header{
     width: 70%;
     background-color: #ffffff1e;
     height: 700px;
+    border-radius: 10px;
+    padding: 1px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -35,12 +36,20 @@ main{
 
 .apps{
     width: 100%;
-    border: 1px solid;
     display: flex;
     align-items: center;
     gap: 1em;
+    margin-left: 1em;
 }
 
 a{
     text-decoration: none;
+}
+form{
+    display: inline;
+    margin-left: 4%;
+    border-radius: 10px;
+}
+form input{
+    color: #18191a;
 }
