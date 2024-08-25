@@ -6,6 +6,11 @@ module.exports = class appController{
 
         const app = App.findByName(appName)
 
+        if(!app){
+            res.render('404')
+        }
+
+
         res.render('app', {app})
     }
 }
